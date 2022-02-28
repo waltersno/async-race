@@ -1,0 +1,14 @@
+.garage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  .tuning-wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .settings-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
+}

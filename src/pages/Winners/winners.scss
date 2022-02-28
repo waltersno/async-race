@@ -1,0 +1,50 @@
+.winners {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:hover {
+      background-color: #ddd;
+    }
+    th,
+    td {
+      border: 1px solid#ddd;
+      padding: 8px;
+    }
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04aa6d;
+      color: white;
+      > .sort-btns-wrapper {
+        display: flex;
+        color: #fff;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        svg {
+          height: 25px;
+          transform: rotate(90deg);
+        }
+        svg.asc {
+          transform: rotate(0deg);
+        }
+        svg.desc {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    td {
+      > svg {
+        height: 20px;
+      }
+    }
+  }
+}

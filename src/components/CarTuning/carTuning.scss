@@ -1,0 +1,42 @@
+.tuning {
+  background: #b6b6b738;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+  &_unclickable {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  > svg {
+    height: 60px;
+    width: auto;
+  }
+  > input[type='text'] {
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    background: transparent;
+    padding: 0.2rem 0.3rem;
+  }
+  > input[type='color'] {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: none;
+  }
+  input[type='color']::-webkit-color-swatch {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  input[type='color']::-webkit-color-swatch-wrapper {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    background-color: transparent;
+  }
+}

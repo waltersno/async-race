@@ -1,0 +1,25 @@
+.button {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: 0.15s background-color;
+  > img {
+    width: 30px;
+  }
+  &.reset {
+    color: #b94141;
+  }
+  &.success {
+    color: #039b2f;
+  }
+  &:hover {
+    background-color: #b6b6b738;
+    transition: 0.15s;
+  }
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}

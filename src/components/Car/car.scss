@@ -1,0 +1,15 @@
+.car {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 0.3rem;
+  border-left: 3px solid transparent;
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  &.selected {
+    border-left: 3px solid #039b2f;
+  }
+}

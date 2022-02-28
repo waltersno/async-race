@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    > img {
+      height: 40px;
+    }
+  }
+  &__logo-name {
+    border-radius: 6px;
+    padding: 0.2rem 0.5rem;
+    background-color: #3c3333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > p {
+      color: #fff;
+      font-size: 14px;
+      border-radius: 7px;
+    }
+  }
+}
